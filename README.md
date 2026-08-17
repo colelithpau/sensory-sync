@@ -4,26 +4,6 @@
 ####  🎧 Device     🎛️ Modes     💡 LED/Touch    📊 Analytics 
 
 
-  ┌──────────────────────────────────────────────────────────┐
-  │ 🔍 Search preset modes, noise profiles, or soundscapes..│
-  └──────────────────────────────────────────────────────────┘
-
-  ┌── NOISE PROFILE SELECTION (Radio Buttons) ─────────────────────┐
-  │                                                                │
-  │   🔘  BGC Walk Mode         (Dampens horns & street noise)    │
-  │   ⚪  Deep Focus Mode       (Filters  conversations)          │
-  │   ⚪  Spatial Passthrough   (Full environmental awareness)    │
-  │                                                                │
-  └────────────────────────────────────────────────────────────────┘
-
-  ┌── HARDWARE SETTINGS (Checkboxes) ────────────────────────┐
-  │                                                          │
-  │   [x]  Enable Titanium Touch Panel Haptics               │
-  │   [x]  Micro-LED Amber Glow (Sync with Focus Mode)       │
-  │   [ ]  Auto-Switch Profiles via Location (BGC Geofence)  │
-  │                                                          │
-  └──────────────────────────────────────────────────────────┘
-
 ####  🏠 Home         🎛️ Quick Control       👤 Profile 
 
 ### 📑 Navigation Bar & Tabs
