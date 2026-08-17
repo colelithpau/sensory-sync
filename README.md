@@ -1,10 +1,10 @@
 ## SENSORYSYNC CONTROL CENTER                              ###[ Battery 85% ]
 
 ### Home > Devices > SensorySync > Preset Configuration
+
 ####  🎧 Device     🎛️ Modes     💡 LED/Touch    📊 Analytics 
 
-
-####🏠 Home         🎛️ Quick Control       👤 Profile 
+#### 🏠 Home         🎛️ Quick Control       👤 Profile 
 
 
 ### Key Menu Options Explained Simply:
