@@ -24,7 +24,7 @@
   │                                                                   │
   └───────────────────────────────────────────────────────────────────┘
 
-####[ 🏠 Home ]           [ 🎛️ Quick Control ]           [ 👤 Profile ]
+#### [ 🏠 Home ]           [ 🎛️ Quick Control ]           [ 👤 Profile ]
 
 ### 📑 Navigation Bar & Tabs
 
