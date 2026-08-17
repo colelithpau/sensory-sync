@@ -1,7 +1,7 @@
 ## SENSORYSYNC CONTROL CENTER                              ###[ Battery 85% ]
 
 ### Home > Devices > SensorySync > Preset Configuration
-#### [ 🎧 Device ]   [[ 🎛️ Modes ]]   [ 💡 LED/Touch ]   [ 📊 Analytics ]
+####  🎧 Device     🎛️ Modes     💡 LED/Touch    📊 Analytics 
 
 
   ┌──────────────────────────────────────────────────────────┐
@@ -24,13 +24,13 @@
   │                                                          │
   └──────────────────────────────────────────────────────────┘
 
-#### [ 🏠 Home ]        [ 🎛️ Quick Control ]         [ 👤 Profile ]
+####  🏠 Home         🎛️ Quick Control       👤 Profile 
 
 ### 📑 Navigation Bar & Tabs
 
-#### |  [ 🎧 Device ]  [ 🎛️ Modes ]   [ 💡 LED/Touch ]  [ 📊 Analytics ]  
+####🎧 Device   🎛️ Modes  💡 LED/Touch  📊 Analytics 
 
-### Active Tab: [ 🎛️ Modes ] highlighted in Electric Violet with bottom glow bar
+### Active Tab: 🎛️ Modes highlighted in Electric Violet with bottom glow bar
 
 ### Key Menu Options Explained Simply:
 
