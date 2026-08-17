@@ -4,31 +4,31 @@
 #### [ 🎧 Device ]   [[ 🎛️ Modes ]]   [ 💡 LED/Touch ]   [ 📊 Analytics ]
 
 
-  ┌───────────────────────────────────────────────────────────────────┐
-  │ 🔍 Search preset modes, noise profiles, or soundscapes...          │
-  └───────────────────────────────────────────────────────────────────┘
+  ┌──────────────────────────────────────────────────────────┐
+  │ 🔍 Search preset modes, noise profiles, or soundscapes..│
+  └──────────────────────────────────────────────────────────┘
 
-  ┌── NOISE PROFILE SELECTION (Radio Buttons) ────────────────────────┐
-  │                                                                   │
-  │   🔘  BGC Walk Mode          (Dampens horns & street noise)       │
-  │   ⚪  Deep Focus Mode        (Filters cafe/office conversations) │
-  │   ⚪  Spatial Passthrough     (Full environmental awareness)       │
-  │                                                                   │
-  └───────────────────────────────────────────────────────────────────┘
+  ┌── NOISE PROFILE SELECTION (Radio Buttons) ─────────────────────┐
+  │                                                                │
+  │   🔘  BGC Walk Mode         (Dampens horns & street noise)    │
+  │   ⚪  Deep Focus Mode       (Filters  conversations)          │
+  │   ⚪  Spatial Passthrough   (Full environmental awareness)    │
+  │                                                                │
+  └────────────────────────────────────────────────────────────────┘
 
-  ┌── HARDWARE SETTINGS (Checkboxes) ─────────────────────────────────┐
-  │                                                                   │
-  │   [x]  Enable Titanium Touch Panel Haptics                        │
-  │   [x]  Micro-LED Amber Glow (Sync with Focus Mode)                │
-  │   [ ]  Auto-Switch Profiles via Location (BGC Geofence)            │
-  │                                                                   │
-  └───────────────────────────────────────────────────────────────────┘
+  ┌── HARDWARE SETTINGS (Checkboxes) ────────────────────────┐
+  │                                                          │
+  │   [x]  Enable Titanium Touch Panel Haptics               │
+  │   [x]  Micro-LED Amber Glow (Sync with Focus Mode)       │
+  │   [ ]  Auto-Switch Profiles via Location (BGC Geofence)  │
+  │                                                          │
+  └──────────────────────────────────────────────────────────┘
 
-#### [ 🏠 Home ]           [ 🎛️ Quick Control ]           [ 👤 Profile ]
+#### [ 🏠 Home ]        [ 🎛️ Quick Control ]         [ 👤 Profile ]
 
 ### 📑 Navigation Bar & Tabs
 
-#### |  [ 🎧 Device ]   [ 🎛️ Modes ]   [ 💡 LED/Touch ]   [ 📊 Analytics ]  |
+#### |  [ 🎧 Device ]  [ 🎛️ Modes ]   [ 💡 LED/Touch ]  [ 📊 Analytics ]  
 
 ### Active Tab: [ 🎛️ Modes ] highlighted in Electric Violet with bottom glow bar
 
