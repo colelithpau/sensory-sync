@@ -1,4 +1,4 @@
-## SENSORYSYNC CONTROL CENTER                              ###[ Battery 85% ]
+## SENSORYSYNC CONTROL CENTER                    
 
 ### Home > Devices > SensorySync > Preset Configuration
 
