@@ -10,7 +10,8 @@ Hot reload: Changes to source files are reflected immediately
 ### Project Structure
 This is the canonical project structure. Start with task-relevant files below. Only follow imports or inspect other files when required, when a documented path is missing, or when the repository contradicts this guide.
 
-- `src/main.tsx` - React entrypoint; imports src/index.css and mounts src/App.tsx into the #root element
+- `src/main.tsx` - React entrypoint; imports - 'src/index.css' - and mounts - 'src/App.tsx' - into the '#root' element
+
 src/App.tsx - Primary application component and the usual starting point for UI work
 src/index.css - Global CSS entrypoint and Tailwind CSS v4 import
 index.html - Vite HTML shell containing the #root element and loading src/main.tsx
