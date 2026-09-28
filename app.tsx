@@ -1,6 +1,6 @@
 import { useState, useRef, useContext, createContext } from 'react'
 
-// ── Theme palettes ────────────────────────────────────────────────────────
+// Theme palettes
 const DARK_C = {
   bg:        '#080A0F',
   surface:   '#111318',
@@ -44,14 +44,13 @@ const LIGHT_C = {
 }
 
 // Mutable palette — root App writes to this before each render subtree
+
 const C: typeof DARK_C = { ...DARK_C }
 
 type ThemeType = 'dark' | 'light'
 const ThemeCtx = createContext<{ theme: ThemeType; toggle: () => void }>({ theme: 'dark', toggle: () => {} })
 
-// ─────────────────────────────────────────────────────────────────────────
 // Shared sub-components
-// ─────────────────────────────────────────────────────────────────────────
 
 function SoundwaveMark({ size = 28, color = C.coral }: { size?: number; color?: string }) {
   const bars = [3, 5, 8, 11, 14, 11, 8, 5, 3]
@@ -170,9 +169,8 @@ function NavTab({ icon, label, active, onClick }: { icon: React.ReactNode; label
   )
 }
 
-// ─────────────────────────────────────────────────────────────────────────
 // Dashboard screen
-// ─────────────────────────────────────────────────────────────────────────
+
 function DashboardScreen() {
   const { theme, toggle: toggleTheme } = useContext(ThemeCtx)
   const [mode, setMode] = useState<Mode>('balanced')
@@ -336,9 +334,7 @@ function DashboardScreen() {
   )
 }
 
-// ─────────────────────────────────────────────────────────────────────────
 // Presets screen
-// ─────────────────────────────────────────────────────────────────────────
 
 interface Preset {
   id: string
@@ -656,14 +652,9 @@ function PresetsScreen() {
   )
 }
 
-// ─────────────────────────────────────────────────────────────────────────
 // Stats screen (placeholder)
-// ─────────────────────────────────────────────────────────────────────────
-// ─────────────────────────────────────────────────────────────────────────
-// Stats — data viz helpers
-// ─────────────────────────────────────────────────────────────────────────
-
 // Donut arc path: angles in degrees, 0 = top
+
 function arcPath(cx: number, cy: number, R: number, r: number, startDeg: number, endDeg: number): string {
   const toRad = (d: number) => ((d - 90) * Math.PI) / 180
   const sx = cx + R * Math.cos(toRad(startDeg))
@@ -700,15 +691,14 @@ const WEEK_DATA = [
 const TODAY_IDX = 3 // Thu = today
 const TARGET = 7.5
 
-// Mode usage frequency
-const MODE_FREQ = [
+const MODE_FREQ = [  // Mode usage frequency
   { label: 'Deep Quiet',  pct: 42, color: '#5B8AF0' },
   { label: 'Balanced',    pct: 31, color: '#E8856A' },
   { label: 'Voice Pass',  pct: 17, color: '#34C98A' },
   { label: 'Transparent', pct: 10, color: '#9B7FEA' },
 ]
 
-// ── Donut chart ────────────────────────────────────────────────────────────
+// Donut chart
 function DonutChart() {
   const [hovered, setHovered] = useState<number | null>(null)
   const cx = 88, cy = 88, R = 72, r = 48
@@ -785,7 +775,7 @@ function DonutChart() {
   )
 }
 
-// ── Weekly bar chart ───────────────────────────────────────────────────────
+// Weekly bar chart
 function WeeklyChart() {
   const [hovered, setHovered] = useState<number | null>(null)
   const W = 356, H = 120
@@ -863,7 +853,7 @@ function WeeklyChart() {
   )
 }
 
-// ── Mode usage frequency bars ──────────────────────────────────────────────
+// Mode usage frequency bars
 function ModeFrequency() {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
@@ -885,7 +875,7 @@ function ModeFrequency() {
   )
 }
 
-// ── Stat tile ──────────────────────────────────────────────────────────────
+// Stat tile
 function StatTile({ value, label, sub, color, icon }: { value: string; label: string; sub?: string; color: string; icon: string }) {
   return (
     <div style={{ flex: 1, background: C.surface, border: `1px solid ${C.border}`, borderRadius: 16, padding: '14px 14px 12px' }}>
@@ -897,7 +887,7 @@ function StatTile({ value, label, sub, color, icon }: { value: string; label: st
   )
 }
 
-// ── Stats screen ───────────────────────────────────────────────────────────
+// Stats screen 
 function StatsScreen() {
   const today = new Date()
   const dateStr = today.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' })
@@ -1002,9 +992,7 @@ function StatsScreen() {
   )
 }
 
-// ─────────────────────────────────────────────────────────────────────────
 // Profile / Settings screen
-// ─────────────────────────────────────────────────────────────────────────
 
 const AVATAR_OPTIONS = [
   { id: 'shih1', url: 'https://images.unsplash.com/photo-1629740067905-bd3f515aa739?w=160&h=160&fit=crop&auto=format', label: 'Fluffy' },
@@ -1450,7 +1438,7 @@ function ProfileScreen() {
   )
 }
 
-// ── Spotify section ────────────────────────────────────────────────────────
+// Spotify section
 const SPOTIFY_PLAYLISTS = [
   { id: '37i9dQZF1DXcBWIGoYBM5M', name: "Today's Top Hits",  emoji: '🔥' },
   { id: '37i9dQZF1DWXLeA8Omikj7', name: 'Brain Food',         emoji: '🧠' },
@@ -1465,8 +1453,7 @@ function SpotifySection({ avatarUrl, userName }: { avatarUrl: string; userName: 
   const [playlist, setPlaylist]   = useState(SPOTIFY_PLAYLISTS[0].id)
 
   const connect = () => {
-    setLoading(true)
-    // Simulate OAuth handshake delay
+    setLoading(true)       // Simulate OAuth handshake delay
     setTimeout(() => { setConnected(true); setLoading(false) }, 1800)
   }
 
@@ -1565,13 +1552,11 @@ function SpotifySection({ avatarUrl, userName }: { avatarUrl: string; userName: 
   )
 }
 
-// ─────────────────────────────────────────────────────────────────────────
 // Root
-// ─────────────────────────────────────────────────────────────────────────
 export default function App() {
   const [activeTab, setActiveTab] = useState('dashboard')
 
-  // ── Theme management ──────────────────────────────────────────────────
+  // Theme management
   const [theme, setTheme] = useState<ThemeType>(() => {
     try { return (localStorage.getItem('sensorysync-theme') as ThemeType) || 'dark' } catch { return 'dark' }
   })
